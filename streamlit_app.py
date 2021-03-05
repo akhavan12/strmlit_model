@@ -10,6 +10,7 @@ import streamlit as st
 ################################################################################################
 import sys
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def get_country_data(country='Italy'):
     """ input country name
