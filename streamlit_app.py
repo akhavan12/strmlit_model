@@ -548,7 +548,7 @@ def calculate(initial_population = 1000,
 
 calculate(initial_population=1000,
           initial_exposed=1,
-          lenght_t=120,
+          lenght_t=400,
           B1=B1,
           B2_start=B2_start,
           B2=B2,
