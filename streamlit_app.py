@@ -184,7 +184,7 @@ def set_probs_M(Probs,num_days = 14, alpha_r=.8, v50=5):
       m_to_m = Top +  (Buttom - Top)/(1+ np.exp((v50 - Tdays)/slope))
       m_to_r = alpha_r*(1 - m_to_m)
       m_to_w = 1 - (m_to_m+m_to_r)
-      return pd.DataFrame({'m_to_m': m_to_m, 'm_to_r' :m_to_r,'m_to_w': m_to_v})
+      return pd.DataFrame({'m_to_m': m_to_m, 'm_to_r' :m_to_r,'m_to_w': m_to_w})
   
   Probs["M"] = m_at_day(num_days = num_days , alpha_r = alpha_r, v50=v50).values
 
