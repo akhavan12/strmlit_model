@@ -10,36 +10,6 @@ import streamlit as st
 ################################################################################################
 import sys
 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-#st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-
-
-
-#import SessionState
-
-#session = SessionState.get(code='Show Flowchart')
-#a = st.radio("Show/Hide Flowchart", ['Hide', 'Show'], 0)
-#if a == 'Show':
-#    st.markdown("![alt text](https://raw.githubusercontent.com/akhavan12/discrete_covid_model/master/Model_Discrete_v4_new.svg)")
-#else:
-#    st.markdown(body=' ')
-
-
-
-
-
-
-
-
-
-
-
-
 
 def get_country_data(country='Italy'):
     """ input country name
@@ -331,7 +301,7 @@ other_dis_ratio = .01
 
 def calculate(initial_population = 1000,
               initial_exposed = 1,
-              lenght_t = 100,
+              lenght_t = 400,
               B1=0.1,
               B2_start=30,
               B2=.1,
