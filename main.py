@@ -20,7 +20,7 @@ hide_streamlit_style = """
 
 
 
-import SessionState
+#import SessionState
 
 #session = SessionState.get(code='Show Flowchart')
 #a = st.radio("Show/Hide Flowchart", ['Hide', 'Show'], 0)
